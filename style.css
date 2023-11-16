@@ -1,21 +1,10 @@
-.mmc{
-color: 	#db7207;
+.mmc3{
+color: 	#b65300;
 text-align: center;
 font-family: fantasy;
-font-size: 60px;
-border: 5px solid black;
-border-radius: 25px;
-background-color: black;
+font-size: 40px;
+border: 5px solid #d4a206;
+border-radius: 20px;
+background-color: #d4a206;
 
 }
-.mmc2{
-    color: 	#db7207;
-    text-align: center;
-    font-family: fantasy;
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: black;
-    width: 50%;
-    margin: auto;
-    }
