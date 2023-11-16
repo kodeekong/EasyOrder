@@ -8,61 +8,111 @@
 }
 
 body{
-    background-color: #f0f0f0;
+    background: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
 }
 
-header{
-    background-color: #333;
-    color:fff;
+.heading{
+    background-color: black;
+    color: #fff;
     text-align: center;
-    padding: 20px 20px 30px;
+    padding: 20px;
+    
 }
 
 h1{
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
-}
-
-.search{
-    display: flex;
-    justify-content: center;
-}
-
-.search input{
-    padding:10px;
-    border: none;
-    width: 40%;
-    font-size: 15px;
-    outline:none;
-    border-radius: 10px 0 0 10px;
-}
-
-.search button{
-    padding: 10px 20px;
-    background-color: #ff5722;
-    border: none;
-    width:10%;
-    
-}
-.mmc{
-color: 	#db7207;
-text-align: center;
-font-family: fantasy;
-font-size: 60px;
-border: 5px solid black;
-border-radius: 25px;
-background-color: black;
-
-}
-.mmc2{
-    color: 	#db7207;
-    text-align: center;
     font-family: fantasy;
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: black;
-    width: 50%;
-    margin: auto;
-    }
+    color: #db7207;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.menu{
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+.heading{
+    background: black;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.heading>h1{
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-bottom: -5px;
+    text-transform: uppercase;
+}
+
+.heading>h3{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    transition: .2s ease-in-out;
+}
+
+.food-items img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto(1fr 50px);
+    grid-row-gap: 15px;
+}
+
+.details-sub>h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.price{
+    text-align: right;
+}
+
+.details>p{
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+
+.details>button{
+    background-color: #db7207;
+    border: none;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.details>button:hover{
+    background: paleturquoise;
+}
