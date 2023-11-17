@@ -197,3 +197,12 @@ transform: translateX(-200%);
     transform: translateX(200%);
 }
 
+.h3{
+color: 	#b65300;
+text-align: center;
+font-family: fantasy;
+font-size: 40px;
+border: 5px solid #d4a206;
+border-radius: 20px;
+background-color: #d4a206;
+}
