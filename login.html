@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="logIn.css">
+    <link rel="stylesheet" href="login.css">
     <title>Restaurant App</title>
 </head>
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up">
         <form>
-            <h1>Create Account</h1>
-        <span>Or use your email for registration</span>
+            <h1>Sign In</h1>
+        <span>Use your registered email and passwordn</span>
         <input type="text"
         placeholder="Email" id="email">
         <input type="password"
         placeholder="Password" id="password"> <br>
-        <button onclick="signup()">Sign up</button>
+        <a href="#">Forgot Passsword?</a>
+        <button onclick="login()">Sign In</button>
         </form>
         </div>
         <div class="form-container sign-in">
             <form>
-                <h1>Sign In</h1>
-            <span>Use your registered email and password</span>
+                <h1>Sign Up</h1>
+            <span>Use your email for registration</span>
             <input type="text"
-            placeholder="Email" id="email">
+            placeholder="Email" id="bemail">
             <input type="password"
-            placeholder="Password" id="password">
-            <a href="#">Forgot Passsword?</a>
-            <button onclick="login()">Sign In</button>
+            placeholder="Password" id="bassword">
+            <button onclick="signup()">Sign Up</button>
             </form>
             </div>
             <div class="toggle-container">
                 <div class="toggle">
                     <div class="toggle-panel 
                         toggle-left">
-                            <h1>Welcome Back</h1>
-                            <p>To start, please log in</p>
-                            <button class="hidden" id="login">Sign In</button>
+                        <h1>Welcome</h1>
+                            <p>Register with your Email</p>
+                            <button class="hidden" id="login">Sign Up</button>
                     </div>
                     <div class="toggle-panel 
                         toggle-right">
-                            <h1>Welcome</h1>
-                            <p>Register with your Email</p>
-                            <button class="hidden" id="register">Sign Up</button>
+                        <h1>Welcome Back</h1>
+                        <p>To start, please log in</p>
+                            <button class="hidden" id="register">Sign In</button>
                     </div>
                 </div>
             </div>
