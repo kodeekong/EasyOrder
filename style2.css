@@ -1,11 +1,11 @@
 .mmc3{
-    color: 	#b65300;
+    color: 	#db7207;
     text-align: center;
     font-family: fantasy;
     font-size: 40px;
-    border: 5px solid #d4a206;
-    border-radius: 20px;
-    background-color: #d4a206;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: black;
 }
 body{
     background-color: rgb(219, 120, 21);
@@ -42,6 +42,7 @@ h1{
     color: #db7207;
     grid-column: 1/-1;
     text-align: center;
+    
 }
 
 .menu{
