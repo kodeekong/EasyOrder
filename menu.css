@@ -10,6 +10,7 @@
 body{
     background: #f0f0f0;
     font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, rgb(219, 120, 21) 0%, rgb(245, 85, 5) 100%);
 }
 
 .heading{
@@ -24,7 +25,7 @@ h1{
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
-    font-family: fantasy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #db7207;
     grid-column: 1/-1;
     text-align: center;
@@ -36,28 +37,48 @@ h1{
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     grid-gap: 20px 40px;
 }
+.nav a{
+    width: 300px;
+    height: 50px;
+    color:#db7207;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    margin: 3px;
+    padding: 3px;
+}
+.nav a:hover{
+    cursor: pointer;
+    transition: 0.30s;
+    background-color: green;
+    
+}
 .heading{
     background: black;
+    border-style: groove;
+    border-radius: 25px;
     color: #fff;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 20px;
     grid-column: 1/-1;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .heading>h1{
     font-weight: 400;
     font-size: 32px;
-    letter-spacing: 5px;
-    margin-bottom: -5px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
     text-transform: uppercase;
+    
+    
 }
 
 .heading>h3{
     font-weight: 600;
     font-size: 22px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
@@ -83,6 +104,7 @@ h1{
     display: grid;
     grid-template-rows: auto(1fr 50px);
     grid-row-gap: 15px;
+    background-color: white;
 }
 
 .details-sub>h5{
