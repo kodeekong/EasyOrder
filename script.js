@@ -3,7 +3,7 @@ function signup(){
     let password = document.getElementById('bassword').value 
 
     localStorage.setItem(email, password)
-    location.replace('menu.html')
+    // window.location('index.html')
 }
 
 function login(){
@@ -12,7 +12,7 @@ function login(){
 
     if(localStorage.getItem(email)){
         if(password === localStorage.getItem(email)){
-            location.replace('index.html')
+            window.location('www.youtube.com')
         }
     }
     else{
