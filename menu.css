@@ -18,7 +18,7 @@ body{
     color: #fff;
     text-align: center;
     padding: 20px;
-    
+
 }
 
 h1{
@@ -49,8 +49,8 @@ h1{
 .nav a:hover{
     cursor: pointer;
     transition: 0.30s;
-    background-color: green;
-    
+    background-color: #db7207;
+    color: white;    
 }
 .heading{
     background: black;
