@@ -138,7 +138,8 @@ h1{
 }
 
 .details>button:hover{
-    background: paleturquoise;
+    color: #db7207;
+    border: 1.80px solid #db7207;
 }
 .search{
     background-color: black;
@@ -151,7 +152,7 @@ h1{
 }
 .search input{
     padding: 10px;
-    border: none;
+    border:none;
     width: 50%;
     font-size: 15px;
     outline: none;
@@ -161,15 +162,18 @@ h1{
 .search button{
     padding: 10px 20px;
     background-color: #db7207;
-    border: none;
+    border:none;
     width: 10%;
     cursor: pointer;
     color: white;
     font-weight: 600;
     border-radius: 0 10px 10px 0;
     transition: all 0.3s ease;
+    font-size: 13px;
 }
 .search button:hover{
-    background-color: lightgreen;
+    background-color: #db7207;
+    border: 1.75px solid white;
+    color: black
     
 }
