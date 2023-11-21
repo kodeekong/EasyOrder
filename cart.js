@@ -93,7 +93,8 @@ function ready(){
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
     
     function purchaseClicked(){
-        alert('Proceeding to checkout!')
+    location.replace('checkout.html')
+
         var cartItems = document.getElementsByClassName('cart-items')[0]
         while (cartItems.hasChildNodes()){
             cartItems.removeChild(cartItems.firstChild)
