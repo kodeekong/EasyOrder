@@ -30,3 +30,9 @@ function signup(){
 
     localStorage.setItem(email, password)
 }
+
+const searchInput = document.getElementById('searchInput')
+const searchButton = document.getElementById('searchButton')
+const fooditems = document.getElementById('food-items')
+const details = document.querySelector('details')
+const detailssub = document.getElementById('details-sub')
