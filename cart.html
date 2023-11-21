@@ -7,6 +7,27 @@
     <title>Shopping Cart</title>
 </head>
 <body>
-    <h1>Shopping Cart</h1>
+    <div class="menu">
+        <div class="heading">
+            <h1 class="h1">Magic Maple Cuisine</h1>
+            <h3>&mdash; Shopping Cart &mdash;</h3>
+            <img class= "cart-icon" src="shoppingcart-icon.jpg" alt="">
+        </div>
+    <div class="container content-section">
+        <!-- <h3 class="section-header">&mdash; Cart &mdash;</h3> -->
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total:</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </div>
+    <script src="cart.js"></script>
 </body>
 </html>
