@@ -163,3 +163,12 @@
     vertical-align: middle;
     padding: .67em .67em;
 }
+
+.btn:hover{
+    background-color: #db7207;
+    color: white;
+}
+
+.btn-primary:hover{
+    background-color: #db7207;
+    color: white;}
