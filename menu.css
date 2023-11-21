@@ -13,19 +13,12 @@ body{
     background: radial-gradient(circle, rgb(219, 120, 21) 0%, rgb(245, 85, 5) 100%);
 }
 
-.heading{
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    
-}
 
 h1{
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fantasy;
     color: #db7207;
     grid-column: 1/-1;
     text-align: center;
@@ -45,6 +38,7 @@ h1{
     letter-spacing: 1px;
     margin: 3px;
     padding: 3px;
+    text-decoration: none;
 }
 .nav a:hover{
     cursor: pointer;
@@ -57,8 +51,8 @@ h1{
     border-style: groove;
     border-radius: 25px;
     color: #fff;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 20px;
     grid-column: 1/-1;
     text-align: center;
@@ -67,19 +61,19 @@ h1{
 
 .heading>h1{
     font-weight: 400;
-    font-size: 32px;
+    font-size: 1.45rem;
     letter-spacing: 2px;
-    margin-bottom: 5px;
+    margin-bottom: -3px;
     text-transform: uppercase;
-    
+
     
 }
-
 .heading>h3{
     font-weight: 600;
     font-size: 22px;
     letter-spacing: 4px;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .food-items{
