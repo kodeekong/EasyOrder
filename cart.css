@@ -113,9 +113,9 @@
 .btn-primary:hover{
     cursor: pointer;
     transition: 0.30s;
-    background-color: white;
     color: #db7207;
-    
+    background-color: white;
+    border: 2px solid black;
 }
 
 .btn{
@@ -146,6 +146,7 @@
     transition: 0.30s;
     background-color: white;
     color: #db7207;
+    
 }
 
 .cart-quantity-input{
@@ -155,13 +156,14 @@
 
 .btn-purchase a{
     text-decoration: none;
-    color:white;
+    color:black;
+
 }
 
 .btn-purchase a:hover{
     cursor: pointer;
     transition: 0.30s;
-    color: #db7207;
+    color: black;
 }
 
 
