@@ -93,6 +93,9 @@ function ready(){
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
     
     function purchaseClicked(){
+
+        location.replace('checkout.html')
+
     location.replace('checkout.html')
 
         var cartItems = document.getElementsByClassName('cart-items')[0]
