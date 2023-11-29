@@ -90,3 +90,12 @@ h1{
     border-radius: 20px;
     padding: 10px;
 }
+.info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #db7207;
+    text-align: center;
+    background: black;
+    border-style: dotted;
+    border-radius: 15px;
+    padding: 10px;
+}
