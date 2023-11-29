@@ -1,7 +1,3 @@
-html{
-    max-width: 1440px;
-}
-
 .mmc2{
     color: 	#db7207;
     text-align: center;
@@ -29,10 +25,10 @@ body{
 
 h1{
     font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 200;
+    /* margin-bottom: 20px; */
     font-family: fantasy;
-    color: #db7207;
+    color: #db7207 ;
     grid-column: 1/-1;
     text-align: center;
     
