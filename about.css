@@ -121,3 +121,11 @@ footer {
     color: #db7207;
     
   }
+  .logo{
+    display: flex;
+    position: relative;
+    width: 150px;
+    margin-top:16px;
+    cursor: pointer;
+    margin-right: 1700px ;
+  }
