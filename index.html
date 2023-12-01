@@ -10,12 +10,16 @@
     <div class="container" id="container">
         <div class="form-container sign-up">
         <form>
-            <h1>Sign In</h1>
-        <span>Use your registered email and passwordn</span>
+        <h1>Sign In</h1>
+        <span>Use your registered email and password</span>
         <input type="text"
         placeholder="Email" id="email">
         <input type="password"
         placeholder="Password" id="password"> <br>
+        <select onchange="manager(event)">
+            <option>User</option>
+            <option>Admin</option>
+        </select>
         <a href="#">Forgot Passsword?</a>
         <button type="button" onclick="login()">Sign In</button>
         </form>
