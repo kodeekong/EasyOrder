@@ -51,3 +51,23 @@ function search(){
             }
         }
     }
+
+function manager(evt){
+    if (evt.target.value == 'Admin')
+    {
+    location.replace('admin.html')
+    }
+}
+
+function validate()
+{
+    if(   document.getElementById("email1").value == "admin"
+       && document.getElementById("password1").value == "MapleMafia4Ever" )
+    {
+        location.href="menu.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+    }
+}
