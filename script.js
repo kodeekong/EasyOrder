@@ -29,9 +29,18 @@ function signup(){
     let password = document.getElementById('bassword').value 
 
     localStorage.setItem(email, password)
+    location.replace('index.html')
 }
 
 function search(){
+    const input = document.getElementById('searchInput').value
+
+    for( let i = 0; i < input.value; i++){
+        
+    }
+}
+
+function search1(){
     const searchbox = document.getElementById('searchInput').value.toUpperCase();
     const storeItem = document.getElementById('menu-container')
     const product = document.querySelectorAll('food-items')
