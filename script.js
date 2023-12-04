@@ -29,9 +29,18 @@ function signup(){
     let password = document.getElementById('bassword').value 
 
     localStorage.setItem(email, password)
+    location.replace('index.html')
 }
 
 function search(){
+    const input = document.getElementById('searchInput').value
+
+    for( let i = 0; i < input.value; i++){
+        
+    }
+}
+
+function search1(){
     const searchbox = document.getElementById('searchInput').value.toUpperCase();
     const storeItem = document.getElementById('menu-container')
     const product = document.querySelectorAll('food-items')
@@ -51,3 +60,23 @@ function search(){
             }
         }
     }
+
+function manager(evt){
+    if (evt.target.value == 'Admin')
+    {
+    location.replace('admin.html')
+    }
+}
+
+function validate()
+{
+    if(   document.getElementById("email1").value == "admin"
+       && document.getElementById("password1").value == "MapleMafia4Ever" )
+    {
+        location.href="menu.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+    }
+}
