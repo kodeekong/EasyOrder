@@ -73,7 +73,7 @@ function validate()
     if(   document.getElementById("email1").value == "admin"
        && document.getElementById("password1").value == "MapleMafia4Ever" )
     {
-        location.href="menu.html";
+        location.href="adminMenu.html";
     }
     else
     {
