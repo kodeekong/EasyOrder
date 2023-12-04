@@ -80,3 +80,17 @@ function validate()
         alert( "validation failed" );
     }
 }
+
+function add(){
+
+}
+
+function remove(){
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    var button = event.target
+    var shopItem = button.parentElement.parentElement
+    var title = shopItem.getElementsByClassName('title')[0].innerText
+    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+    addItemToCart(title, price)
+}
