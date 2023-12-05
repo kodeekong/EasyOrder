@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="adminMenu.css">
+    <title>Magic Maple</title>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="heading">
+            <h1>Magic Maple Cuisine</h1>
+            <h3>&mdash; Maple Madness Menu &mdash;</h3>
+            <div class="nav">
+                <a href="main.html">Main</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="index.html">Login/Signup</a>
+                <a href="#cart"><i class="ri-shopping-cart-2-fill"></i></a>
+                
+                <div class="search">
+                <input type="text" id="searchInput" onkeyup="search()" placeholder="Search">
+                <button type="button" id="searchButton" onclick="search()">Search</button>
+
+                
+            </div>
+            
+      </div>
+        </div>  
+        <div class="menu-container">
+        <div class="food-items" id="food-items">
+            <img src="https://www.thekitcheneer.com/wp-content/uploads/2020/09/THB-Maple-Bourbon-Bacon-Burger_2.jpg" alt="Maple-Bourbon-Bacon-Burger_2">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Bourbon Bacon Burger</h5>
+                    <h4 class="shop-item-price">$11</h5>
+                </div>
+                <p>The maple bourbon bacon burger, a burger made with principles. enjoy this beauttifully seared angus 80/20 burger patty with delicious bourbon maple butter lathered over top of the bacon cheeseburger.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Mom-s-Maple-Apple-Pie_exps165155_TH2379807C11_02_3bC_RMS-2.jpg?fit=700%2C1024" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Apple Pie</h5>
+                    <h4 class="shop-item-price">$13</h5>
+                </div>
+                <p>This Delicious add on the menu is the Maple apple pie. we take apple before its made into apple pie and marinate it in some maple syrup to get a little bit of a sweeter bite.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://images.squarespace-cdn.com/content/v1/5ed666a6924cd0017d343b01/1592795006560-C8GF1FZIYDWZJECW2QRA/bite-me-more-brown-sugar-pancakes.jpg?format=1000w" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Pancakes</h5>
+                    <h4 class="shop-item-price">$14</h5>
+                </div>
+                <p>Not just any pancakes... These maple pancakes specially delivered from the 'Maple Kingdom Menu' </p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.queensleeappetit.com/wp-content/uploads/2020/09/the-best-french-toast-recipe-queensleeappetit.com-1-720x720.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple French Toast</h5>
+                    <h4 class="shop-item-price">$14</h5>
+                </div>
+                <p>Maple Flavored french toast with maple syrup mixed into the batter. Crafted by the Maple itself. In acient times, it is said to hold mysterious powers to the one up to the task of eating this deliciously delightful maple meal.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://chefjamika.com/wp-content/uploads/maple-sweet-potato-fries-2000x1333.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Fries</h5>
+                    <h4 class="shop-item-price">$12</h5>
+                </div>
+                <p>These maple fries are the best example of the best salt maple ratio ever known. Mixed maple ingredients with some adobo and seasoning finesse.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://theviewfromgreatisland.com/wp-content/uploads/2020/11/Maple-Cheesecake-8505589-November-06-2020.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Cheesecake</h5>
+                    <h4 class="shop-item-price">$13</h5>
+                </div>
+                <p>Cheesecake crafted by the maple people who strategize ways to perfect the cheesecake, so they have created the best maple cheesecake formula that is MUST TRY!</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://images.ricardocuisine.com/services/recipes/7437.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Pie</h5>
+                    <h4 class="shop-item-price">$11</h5>
+                </div>
+                <p>Maple Pie piece of perfections. Considered a gift from the heavens when it's freshly out, hot and ready with the best maple ice cream.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Maple-Butter-Twists_EXPS_UGFBMZ17_19947_B05_09_1b-3.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Butter Twist</h5>
+                    <h4 class="shop-item-price">$9</h5>
+                </div>
+                <p>These maple butter twists were the luxury of the maple era. Curated complete creamy complexity. </p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.fullerssugarhouse.com/wp-content/uploads/2021/08/churros.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Churros</h5>
+                    <h4 class="shop-item-price">$8</h5>
+                </div>
+                <p>These churros were made with maple syrup put into the filling of the churro. The churro recipe was cultivated from the maple medic master to guarentee a maple mystery delight</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.nuggetmarket.com/media/images/00/15/bacon-funnel-cake.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Funnel Cake</h5>
+                    <h4 class="shop-item-price">$9</h5>
+                </div>
+                <p>The maple funnel cake with the smoothly placed maple powder. The funnel that'll make your inner maple power manifest.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2017/09/Glazed-Apple-Maple-Blondies_exps177812_TH143193D04_10_1bC_RMS.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Glazed Apple-Maple Blondies</h5>
+                    <h4 class="shop-item-price">$7</h5>
+                </div>
+                <p>The best of blondies. A subtle glaze with a combination of apple and maple becoming one in a million. A maple-zonian recipe</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Mini-Maple-Cinnamon-Rolls_EXPS_FBMZ18_32453_C05_08_10b-3.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Mini Maple Cinnamon Rolls</h5>
+                    <h4 class="shop-item-price">$12</h5>
+                </div>
+                <p>Coated with butter before going in the oven covered in maple sugar cream on top. This mini maple recipe has been passed down from cinnamon to the rolls from the beginning of the maple era to our present day</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Chewy-Maple-Cookies_exps8097_CC2661980A04_10_2b_RMS-1.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Chewy Maple Cookies</h5>
+                    <h4 class="shop-item-price">$6</h5>
+                </div>
+                <p>Perfected for your foundation. These cookies are made with grandmaple's love. This treat comes with additions of maple greatness.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps132615_THCA163696B08_25_4b-1.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple-Bacon White Chocolate Fudge</h5>
+                    <h4 class="shop-item-price">$8</h5>
+                </div>
+                <p>We're putting bacon in everything... Don't let the bacon decieve you. The bacon is finely cooked for a nice smooth crunch/subtly/ A sweet maple magic bacon with the best white chocolate fudge maple mixture.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Morning-Maple-Muffins_exps11087_CX1995511B12_01_2bC_RMS-1.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Morning Maple Muffins</h5>
+                    <h4 class="shop-item-price">$4</h5>
+                </div>
+                <p>Baked maple crisp covered muffins with maple syrup mixed in the batter. Appearance inspired by the mad hatter maple muffin morning master. </p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/EXPS_HRBZ16_134188_B09_08_1b-11.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Bacon Walnut Coffee Cake</h5>
+                    <h4 class="shop-item-price">$</h5>
+                </div>
+                <p>Walnut coffee cake with maple bacon on top with a maple syrup glaze. If you look at it long enough it will call out to you. You can hear the whispers, "eat me..."</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Ginger-Maple-Roasted-Pecans_exps136611_TH132104C07_03_5bC_RMS-2.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Ginger-Maple Roasted Pecans</h5>
+                    <h4 class="shop-item-price">$6</h5>
+                </div>
+                <p>A ginger-maple pairing for a roasted pecan. Take one and you will end up eating a lot more than you intended.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Maple-Nut-Banana-Bread_exps51403_THCA143053C09_10_4bC_RMS-8.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Nut Banana Bread</h5>
+                    <h4 class="shop-item-price">$6</h5>
+                </div>
+                <p>We understand, this isn't for everyone. Nut allergies exist, but at Magic Maple we a no nut option that taste the same as this beautifully sliced banana bread.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8031_FB143426D05_08_4b-5.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Sticky Buns</h5>
+                    <h4 class="shop-item-price">$10</h5>
+                </div>
+                <p>A maple sticky but that will have you stuck eating multiple. This maple mess of a bun was banned for being the best in many states the demand became so high we expanded.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps28645_SD153319C10_14_6b-6.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Sausage Skillet</h5>
+                    <h4 class="shop-item-price">$14</h5>
+                </div>
+                <p>A well-balanced maple sausage skillet made with magic from the maples. The land of the maples poured a boosting effect in the recipe. All of your senses will be grateful.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps178590_TH143194D06_19_6b-2.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Roasted Sweet Potato Salad With Honey-Maple Vinaigrette</h5>
+                    <h4 class="shop-item-price">$11</h5>
+                </div>
+                <p>Maple health enhancing salad. The maple medic made this honey-maple vinaigrette mix that'll make your energy levels rise. The roasted sweet potato has reverse-aging properties.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Grilled-Maple-Pork-Chops_EXPS_FTTMZ19_113362_C03_05_4b_rms-5.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Grilled Maple Pork Chops</h5>
+                    <h4 class="shop-item-price">$15</h5>
+                </div>
+                <p>The Maple Magicians crafted another maplepiece. Every magic maple option has benefits to your everyday health. The maplepiece was intended to fuel and heal your body. Eat in maple moderation. </p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://static.nycgovparks.org/images/pagefiles/183/Sugar-Maple-10-17-22-Central-Park-large__63505eedd6adb.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Sugar Maple Leaf</h5>
+                    <h4 class="shop-item-price">$69</h5>
+                </div>
+                <p>This delicious freshly picked Maple Leaf from the most well taken care of sugar maple tree in ontario canada every sunday and thursday afternoon. this maple leaf is guarenteed to knock your socks off.</p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        <div class="food-items" id="food-items">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Maple-Sausage-Patties_EXPS_SDDJ17_29196_B08_05_5b-1.jpg?fit=700,700" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title">Maple Sausage Patties</h5>
+                    <h4 class="shop-item-price">$12</h5>
+                </div>
+                <p>Maple Sausage Patties cooked on the flat grill to be beautiful crisp outside with a beautiful sear, nice and juicy on the inside served with a dippy egg.</p>                
+                 <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>
+
+        </div>
+        </div>
+    </div>  
+    <div class="container content-section">
+         <div class="cart-row">
+             <span class="cart-item cart-header cart-column">REMOVED ITEMS</span>
+         </div>
+         <div id="cart" class="cart-items">
+         </div>
+         <div class="cart-total">
+         </div>
+     </div>
+
+
+     <script src="adminMenu.js"></script>
+</body>
+</html>
