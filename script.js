@@ -85,7 +85,7 @@ function add(){
 
 }
 
-function remove(){
+function remove(){ 
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     var button = event.target
