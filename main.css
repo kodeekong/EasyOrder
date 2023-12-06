@@ -151,17 +151,20 @@ ul ,li {
 footer{
    background-color: black;
    color: #fff; 
+   padding: 0;
+   margin: 0px;
+
 }
 
 .footer_info {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     display:flex;
     padding: 50px 0;
 }
 
 .footer_info .footer_width {
-    padding: 0 15px;
+    padding: 0 145px;
 }
 
 .footer_info h2{
@@ -233,31 +236,6 @@ a{
     text-align: center;
     background-color: gray;
 }
-
-@media screen and (max-width:992px){
-    
-    .about , .contact{
-        width:35%
-    }
-
-    .link{
-        width: 30%;
-    }
-
-
-}
-
-@media screen and (max-width: 767px) {
-    .about , .contact , .link {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .footer_info{
-        flex-direction: column;
-    }
-}
-
 
 
 header{
