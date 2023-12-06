@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="adminMenu.css">
     <title>Magic Maple</title>
 </head>
 <body>
@@ -24,8 +25,8 @@
                 <a href="#cart"><i class="ri-shopping-cart-2-fill"></i></a>
                 
                 <div class="search">
-                <input type="text" id="searchInput" onkeyup="search1()" placeholder="Search">
-                <button type="button" id="searchButton" onclick="search1()">Search</button>
+                <input type="text" id="searchInput" onkeyup="search()" placeholder="Search">
+                <button type="button" id="searchButton" onclick="search()">Search</button>
 
                 
             </div>
@@ -41,7 +42,7 @@
                     <h4 class="shop-item-price">$11</h5>
                 </div>
                 <p>The maple bourbon bacon burger, a burger made with principles. enjoy this beauttifully seared angus 80/20 burger patty with delicious bourbon maple butter lathered over top of the bacon cheeseburger.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -53,7 +54,7 @@
                     <h4 class="shop-item-price">$13</h5>
                 </div>
                 <p>This Delicious add on the menu is the Maple apple pie. we take apple before its made into apple pie and marinate it in some maple syrup to get a little bit of a sweeter bite.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -65,7 +66,7 @@
                     <h4 class="shop-item-price">$14</h5>
                 </div>
                 <p>Not just any pancakes... These maple pancakes specially delivered from the 'Maple Kingdom Menu' </p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -77,7 +78,7 @@
                     <h4 class="shop-item-price">$14</h5>
                 </div>
                 <p>Maple Flavored french toast with maple syrup mixed into the batter. Crafted by the Maple itself. In acient times, it is said to hold mysterious powers to the one up to the task of eating this deliciously delightful maple meal.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -89,7 +90,7 @@
                     <h4 class="shop-item-price">$12</h5>
                 </div>
                 <p>These maple fries are the best example of the best salt maple ratio ever known. Mixed maple ingredients with some adobo and seasoning finesse.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -101,7 +102,7 @@
                     <h4 class="shop-item-price">$13</h5>
                 </div>
                 <p>Cheesecake crafted by the maple people who strategize ways to perfect the cheesecake, so they have created the best maple cheesecake formula that is MUST TRY!</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -113,7 +114,7 @@
                     <h4 class="shop-item-price">$11</h5>
                 </div>
                 <p>Maple Pie piece of perfections. Considered a gift from the heavens when it's freshly out, hot and ready with the best maple ice cream.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -125,7 +126,7 @@
                     <h4 class="shop-item-price">$9</h5>
                 </div>
                 <p>These maple butter twists were the luxury of the maple era. Curated complete creamy complexity. </p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -137,7 +138,7 @@
                     <h4 class="shop-item-price">$8</h5>
                 </div>
                 <p>These churros were made with maple syrup put into the filling of the churro. The churro recipe was cultivated from the maple medic master to guarentee a maple mystery delight</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -149,7 +150,7 @@
                     <h4 class="shop-item-price">$9</h5>
                 </div>
                 <p>The maple funnel cake with the smoothly placed maple powder. The funnel that'll make your inner maple power manifest.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -161,7 +162,7 @@
                     <h4 class="shop-item-price">$7</h5>
                 </div>
                 <p>The best of blondies. A subtle glaze with a combination of apple and maple becoming one in a million. A maple-zonian recipe</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -173,7 +174,7 @@
                     <h4 class="shop-item-price">$12</h5>
                 </div>
                 <p>Coated with butter before going in the oven covered in maple sugar cream on top. This mini maple recipe has been passed down from cinnamon to the rolls from the beginning of the maple era to our present day</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -185,7 +186,7 @@
                     <h4 class="shop-item-price">$6</h5>
                 </div>
                 <p>Perfected for your foundation. These cookies are made with grandmaple's love. This treat comes with additions of maple greatness.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -197,7 +198,7 @@
                     <h4 class="shop-item-price">$8</h5>
                 </div>
                 <p>We're putting bacon in everything... Don't let the bacon decieve you. The bacon is finely cooked for a nice smooth crunch/subtly/ A sweet maple magic bacon with the best white chocolate fudge maple mixture.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -209,7 +210,7 @@
                     <h4 class="shop-item-price">$4</h5>
                 </div>
                 <p>Baked maple crisp covered muffins with maple syrup mixed in the batter. Appearance inspired by the mad hatter maple muffin morning master. </p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -221,7 +222,7 @@
                     <h4 class="shop-item-price">$</h5>
                 </div>
                 <p>Walnut coffee cake with maple bacon on top with a maple syrup glaze. If you look at it long enough it will call out to you. You can hear the whispers, "eat me..."</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -233,7 +234,7 @@
                     <h4 class="shop-item-price">$6</h5>
                 </div>
                 <p>A ginger-maple pairing for a roasted pecan. Take one and you will end up eating a lot more than you intended.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -245,7 +246,7 @@
                     <h4 class="shop-item-price">$6</h5>
                 </div>
                 <p>We understand, this isn't for everyone. Nut allergies exist, but at Magic Maple we a no nut option that taste the same as this beautifully sliced banana bread.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -257,7 +258,7 @@
                     <h4 class="shop-item-price">$10</h5>
                 </div>
                 <p>A maple sticky but that will have you stuck eating multiple. This maple mess of a bun was banned for being the best in many states the demand became so high we expanded.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -269,7 +270,7 @@
                     <h4 class="shop-item-price">$14</h5>
                 </div>
                 <p>A well-balanced maple sausage skillet made with magic from the maples. The land of the maples poured a boosting effect in the recipe. All of your senses will be grateful.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -281,7 +282,7 @@
                     <h4 class="shop-item-price">$11</h5>
                 </div>
                 <p>Maple health enhancing salad. The maple medic made this honey-maple vinaigrette mix that'll make your energy levels rise. The roasted sweet potato has reverse-aging properties.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -293,7 +294,7 @@
                     <h4 class="shop-item-price">$15</h5>
                 </div>
                 <p>The Maple Magicians crafted another maplepiece. Every magic maple option has benefits to your everyday health. The maplepiece was intended to fuel and heal your body. Eat in maple moderation. </p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -305,7 +306,7 @@
                     <h4 class="shop-item-price">$69</h5>
                 </div>
                 <p>This delicious freshly picked Maple Leaf from the most well taken care of sugar maple tree in ontario canada every sunday and thursday afternoon. this maple leaf is guarenteed to knock your socks off.</p>
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -317,7 +318,7 @@
                     <h4 class="shop-item-price">$12</h5>
                 </div>
                 <p>Maple Sausage Patties cooked on the flat grill to be beautiful crisp outside with a beautiful sear, nice and juicy on the inside served with a dippy egg.</p>                
-                <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
+                 <button class="admn-btn" type="button" onclick="remove()">remove</button>
             </div>
 
         </div>
@@ -325,21 +326,16 @@
     </div>  
     <div class="container content-section">
          <div class="cart-row">
-             <span class="cart-item cart-header cart-column">ITEM</span>
-             <span class="cart-price cart-header cart-column">PRICE</span>
-             <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+             <span class="cart-item cart-header cart-column">REMOVED ITEMS</span>
          </div>
          <div id="cart" class="cart-items">
          </div>
          <div class="cart-total">
-            <strong class="cart-total-title">Total:</strong>
-            <span class="cart-total-price">$0</span>
          </div>
-          <button class="btn btn-primary btn-purchase" type="button"><a href="checkout.html">CHECKOUT</a></button>
      </div>
 
 
-    <script src="cart.js" async></script>
-    <script src="script.js" async></script>
+     <script src="adminMenu.js" async></script>
+     <!-- <script src="cart.js" async></script> -->
 </body>
 </html>

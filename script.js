@@ -32,19 +32,31 @@ function signup(){
     location.replace('index.html')
 }
 
-function search(){
-    const input = document.getElementById('searchInput').value
+function manager(evt){
+    if (evt.target.value == 'Admin')
+    {
+    location.replace('admin.html')
+    }
+}
 
-    for( let i = 0; i < input.value; i++){
-        
+function validate()
+{
+    if(   document.getElementById("email1").value == "admin"
+       && document.getElementById("password1").value == "MapleMafia4Ever" )
+    {
+        location.href="adminMenu.html";
+    }
+    else
+    {
+        alert( "validation failed" );
     }
 }
 
 function search1(){
     const searchbox = document.getElementById('searchInput').value.toUpperCase();
     const storeItem = document.getElementById('menu-container')
-    const product = document.querySelectorAll('food-items')
-    const pname = document.getElementsByTagName('h5')
+    const product = document.querySelectorAll('details-sub')
+    const pname = document.getElementsByClassName('details-sub')
 
     for( var i = 0; i < pname.length; i++){
         let match = product[i].getElementsByTagName('h5')[0];
@@ -60,23 +72,3 @@ function search1(){
             }
         }
     }
-
-function manager(evt){
-    if (evt.target.value == 'Admin')
-    {
-    location.replace('admin.html')
-    }
-}
-
-function validate()
-{
-    if(   document.getElementById("email1").value == "admin"
-       && document.getElementById("password1").value == "MapleMafia4Ever" )
-    {
-        location.href="menu.html";
-    }
-    else
-    {
-        alert( "validation failed" );
-    }
-}
