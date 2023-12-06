@@ -32,35 +32,6 @@ function signup(){
     location.replace('index.html')
 }
 
-function search(){
-    const input = document.getElementById('searchInput').value
-
-    for( let i = 0; i < input.value; i++){
-        
-    }
-}
-
-function search1(){
-    const searchbox = document.getElementById('searchInput').value.toUpperCase();
-    const storeItem = document.getElementById('menu-container')
-    const product = document.querySelectorAll('food-items')
-    const pname = document.getElementsByTagName('h5')
-
-    for( var i = 0; i < pname.length; i++){
-        let match = product[i].getElementsByTagName('h5')[0];
-
-        if(match){
-           let textValue = match.textContent || match.innerHTML
-
-           if(textValue.toUpperCase().indexOf(searchbox) > -1) {
-            product[i].style.display = "";
-            } else {
-            product[i].style.display = "none"
-                }
-            }
-        }
-    }
-
 function manager(evt){
     if (evt.target.value == 'Admin')
     {
@@ -81,16 +52,23 @@ function validate()
     }
 }
 
-function add(){
+function search1(){
+    const searchbox = document.getElementById('searchInput').value.toUpperCase();
+    const storeItem = document.getElementById('menu-container')
+    const product = document.querySelectorAll('details-sub')
+    const pname = document.getElementsByClassName('details-sub')
 
-}
+    for( var i = 0; i < pname.length; i++){
+        let match = product[i].getElementsByTagName('h5')[0];
 
-function remove(){ 
-    var buttonClicked = event.target
-    buttonClicked.parentElement.parentElement.remove()
-    var button = event.target
-    var shopItem = button.parentElement.parentElement
-    var title = shopItem.getElementsByClassName('title')[0].innerText
-    var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
-    addItemToCart(title, price)
-}
+        if(match){
+           let textValue = match.textContent || match.innerHTML
+
+           if(textValue.toUpperCase().indexOf(searchbox) > -1) {
+            product[i].style.display = "";
+            } else {
+            product[i].style.display = "none"
+                }
+            }
+        }
+    }
