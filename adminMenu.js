@@ -22,7 +22,7 @@ function ready(){
         } 
     }
     
-    function removeItem(event) {
+function removeItem(event) {
         var buttonClicked = event.target
         buttonClicked.parentElement.parentElement.remove()
         updateCart()
@@ -65,7 +65,7 @@ function ready(){
             button.addEventListener('click', addToCartClicked)
         }
     
-    function addItemToCart(title, price){
+function addItemToCart(title, price){
         var cartRow = document.createElement('div')
         cartRow.classList.add('cart-row')
         var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -89,11 +89,12 @@ function ready(){
         cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change' , quantityChanged)
     }
     
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 
 
 // function add(){
-//     var menuRow = document.getElementById('food-items')
-// document.getElementsByClassName('cart-row')[0].append()
+//     const items = document.getElementsByClassName('cart-item')
+//     var backToMenu = '
+
 // }
 
