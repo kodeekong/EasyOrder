@@ -113,13 +113,16 @@ h3{
 
     
   
-  .logo{
+.logo{
     display: flex;
     position: relative;
-    width: 150px;
-    margin-top:16px;
+    width: 100px;
+    margin-top: -60px;
+    top: 50px;
+    right: 80px;
     cursor: pointer;
     margin-right: 1700px ;
+    margin-bottom: -50px;
   }
 
   .abtpic{
@@ -127,24 +130,21 @@ h3{
     
   }
 
-  ul ,li {
-    list-style-type: none;
-}
-
 footer{
    background-color: black;
    color: #fff; 
 }
 
 .footer_inf {
-    width: 90%;
+    width: 100%;
+    width: 85%;
     margin: 0 auto;
     display:flex;
     padding: 50px 0;
 }
 
 .footer_inf .footer_width {
-    padding: 0 15px;
+    padding: 0 145px;
 }
 
 .footer_inf h2{
@@ -212,31 +212,7 @@ a{
 }
 
 .copy-right{
-    padding: 15px 0;
     text-align: center;
     background-color: gray;
-}
-
-@media screen and (max-width:992px){
-    
-    .aboutbout , .contact{
-        width:35%
-    }
-
-    .link{
-        width: 30%;
-    }
-
-
-}
-
-@media screen and (max-width: 767px) {
-    .aboutbout , .contact , .link {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .footer_inf{
-        flex-direction: column;
-    }
+    ;
 }
