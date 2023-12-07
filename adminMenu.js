@@ -1,3 +1,9 @@
+if(document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded', ready)
+} else{
+    ready()
+}
+
 function remove(){
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
@@ -8,12 +14,6 @@ function remove(){
     addItemToCart(title, price)
 }
 
-if(document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded', ready)
-} else{
-    ready()
-}
-
 function ready(){
     var removeButton = document.getElementsByClassName('btn-danger')
     for(var i = 0; i < removeButton.length; i++) {
@@ -22,13 +22,14 @@ function ready(){
         } 
     }
     
-    function removeItem(event) {
-        var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
-        updateCart()
-    }
+function removeItem(event) {
+    var buttonClicked = event.target
+    // buttonClicked.parentElement.parentElement.remove()
+    $("#parent").append($savedClassName);
+    updateCart()
+}
     
-    function updateCart(){
+function updateCart(){
         var itemContainer = document.getElementsByClassName('cart-items')[0]
         var cartRows = itemContainer.getElementsByClassName('cart-row')
         var total = 0
@@ -51,7 +52,7 @@ function ready(){
             input.addEventListener('change', quantityChanged)
         }
     
-    function quantityChanged(event){
+function quantityChanged(event){
         var input = event.target
         if (isNaN(input.value) || input.value <= 0) {
             input.value = 1
@@ -65,7 +66,7 @@ function ready(){
             button.addEventListener('click', addToCartClicked)
         }
     
-    function addItemToCart(title, price){
+function addItemToCart(title, price){
         var cartRow = document.createElement('div')
         cartRow.classList.add('cart-row')
         var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -86,7 +87,6 @@ function ready(){
         cartRow.innerHTML = cartRowContents
         cartItems.append(cartRow)
         cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeItem)
-        cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change' , quantityChanged)
     }
     
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
