@@ -106,7 +106,7 @@ h3{
     color: #db7207;
     text-align: center;
     background: black;
-    border-style: dotted;
+    border-style: groove;
     border-radius: 15px;
     padding: 25px;
     margin-left: 40px;
@@ -115,6 +115,22 @@ h3{
     margin-bottom: 10px;
 
 }
+
+.info2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #db7207;
+    text-align: center;
+    background: white;
+    border-style: groove;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
 
     
   
