@@ -113,13 +113,16 @@ h3{
 
     
   
-  .logo{
+.logo{
     display: flex;
     position: relative;
-    width: 150px;
-    margin-top:16px;
+    width: 100px;
+    margin-top: -60px;
+    top: 50px;
+    right: 80px;
     cursor: pointer;
     margin-right: 1700px ;
+    margin-bottom: -50px;
   }
 
   .abtpic{
