@@ -1,3 +1,9 @@
+if(document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded', ready)
+} else{
+    ready()
+}
+
 function remove(){
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
@@ -6,12 +12,6 @@ function remove(){
     var title = shopItem.getElementsByClassName('title')[0].innerText
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
     addItemToCart(title, price)
-}
-
-if(document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded', ready)
-} else{
-    ready()
 }
 
 function ready(){
@@ -23,12 +23,13 @@ function ready(){
     }
     
 function removeItem(event) {
-        var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
-        updateCart()
-    }
+    var buttonClicked = event.target
+    // buttonClicked.parentElement.parentElement.remove()
+    $("#parent").append($savedClassName);
+    updateCart()
+}
     
-    function updateCart(){
+function updateCart(){
         var itemContainer = document.getElementsByClassName('cart-items')[0]
         var cartRows = itemContainer.getElementsByClassName('cart-row')
         var total = 0
@@ -51,7 +52,7 @@ function removeItem(event) {
             input.addEventListener('change', quantityChanged)
         }
     
-    function quantityChanged(event){
+function quantityChanged(event){
         var input = event.target
         if (isNaN(input.value) || input.value <= 0) {
             input.value = 1
@@ -86,15 +87,6 @@ function addItemToCart(title, price){
         cartRow.innerHTML = cartRowContents
         cartItems.append(cartRow)
         cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeItem)
-        cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change' , quantityChanged)
     }
     
-document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
-
-
-// function add(){
-//     const items = document.getElementsByClassName('cart-item')
-//     var backToMenu = '
-
-// }
-
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)

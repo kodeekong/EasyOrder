@@ -113,13 +113,16 @@ h3{
 
     
   
-  .logo{
+.logo{
     display: flex;
     position: relative;
-    width: 150px;
-    margin-top:16px;
+    width: 100px;
+    margin-top: -60px;
+    top: 50px;
+    right: 80px;
     cursor: pointer;
     margin-right: 1700px ;
+    margin-bottom: -50px;
   }
 
   .abtpic{
@@ -127,16 +130,13 @@ h3{
     
   }
 
-  ul ,li {
-    list-style-type: none;
-}
-
 footer{
    background-color: black;
    color: #fff; 
 }
 
 .footer_inf {
+    width: 100%;
     width: 85%;
     margin: 0 auto;
     display:flex;
@@ -212,7 +212,7 @@ a{
 }
 
 .copy-right{
-    padding: 15px 0;
     text-align: center;
     background-color: gray;
+    ;
 }
