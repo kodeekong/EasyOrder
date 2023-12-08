@@ -24,8 +24,7 @@ function ready(){
     
 function removeItem(event) {
     var buttonClicked = event.target
-    // buttonClicked.parentElement.parentElement.remove()
-    $("#parent").append($savedClassName);
+    buttonClicked.parentElement.parentElement.remove()
     updateCart()
 }
     
@@ -66,27 +65,53 @@ function quantityChanged(event){
             button.addEventListener('click', addToCartClicked)
         }
     
-function addItemToCart(title, price){
-        var cartRow = document.createElement('div')
-        cartRow.classList.add('cart-row')
-        var cartItems = document.getElementsByClassName('cart-items')[0]
-        var cartItemNames = cartItems.getElementsByClassName('title')
-        for (var i =0; i < cartItemNames.length; i++) {
-            if( cartItemNames[i].innerText == title){
-                alert('Already added to cart')
-                return
-            }
+// function addItemToCart(title, price){
+//         var cartRow = document.createElement('div')
+//         cartRow.classList.add('cart-row')
+//         var cartItems = document.getElementsByClassName('cart-items')[0]
+//         var cartItemNames = cartItems.getElementsByClassName('title')
+//         for (var i =0; i < cartItemNames.length; i++) {
+//             if( cartItemNames[i].innerText == title){
+//                 alert('Already added to cart')
+//                 return
+//             }
+//         }
+//         var cartRowContents = `
+//             <div class="cart-item cart-column">
+//                 <span class="title">${title}</span>
+//             </div>
+//             <div class="cart-quantity cart-column">
+//                 <button class="btn btn-danger" type="button">ADD BACK</button>
+//             </div> `
+//         cartRow.innerHTML = cartRowContents
+//         cartItems.append(cartRow)
+//         cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeItem)
+//     }
+function addItemToCart(title, price, imageSrc){
+    var cartRow = document.createElement('div')
+    cartRow.classList.add('cart-row')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    for (var i =0; i < cartItemNames.length; i++) {
+        if( cartItemNames[i].innerText == title){
+            alert('Already added to cart')
+            return
         }
-        var cartRowContents = `
-            <div class="cart-item cart-column">
-                <span class="title">${title}</span>
-            </div>
-            <div class="cart-quantity cart-column">
-                <button class="btn btn-danger" type="button">ADD BACK</button>
-            </div> `
-        cartRow.innerHTML = cartRowContents
-        cartItems.append(cartRow)
-        cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeItem)
     }
-    
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+    var cartRowContents = `
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src=" ${imageSrc}" width="100" height="100">
+            <span class="cart-item-title">${title}</span>
+        </div>
+        <span class="cart-price cart-column">${price}</span>
+        <div class="cart-quantity cart-column">
+            <button class="btn btn-danger" type="button">Add Back</button>
+        </div> `
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change' , quantityChanged)
+}
+
+document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+
