@@ -121,14 +121,14 @@ h3{
     color: #db7207;
     text-align: center;
     background: white;
-    border-style: groove;
-    border-radius: 15px;
+    border-style: 5px groove;
+    border-radius: 20px;
     padding: 5px;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
-
+    text-transform: capitalize;
 }
 
 
