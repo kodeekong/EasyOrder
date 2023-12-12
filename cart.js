@@ -103,6 +103,7 @@ function ready(){
         updateCart()
     }
 
+
     function goToReceipt(){
         location.replace('receipt.html')
     }
