@@ -30,7 +30,7 @@ function login(emailId){
 
     if(localStorage.getItem(email)){
         if(password === localStorage.getItem(email)){       
-        location.replace('menu.html')
+        location.replace('main.html')
         }
     }
     else{

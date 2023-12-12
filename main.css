@@ -263,7 +263,8 @@ header .content h1 span{
 header .content p{
     margin-bottom: 2rem;
     color: #ccc;
-    font-size: 1.10rem;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 header .image{
@@ -322,6 +323,8 @@ hr{
     font-weight: 500;
     line-height: 4rem;
     font-family: 'Courier New', Courier, monospace;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
 }
 
 
@@ -335,6 +338,12 @@ hr{
     color: #ccc;
     font-size: 1.10rem;
 
+}
+
+.infohub p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color:black;
 }
 
 
