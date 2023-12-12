@@ -90,3 +90,9 @@ function search1(){
 function goTo(){
     location.href='menu.html'
 }
+function goTo1(){
+    location.href='cashout.html'
+}
+function goTo2(){
+    location.href='checkout.html'
+}
