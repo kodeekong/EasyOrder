@@ -36,7 +36,7 @@ function login(emailId){
     else{
         alert('incorrect Password')
     }
-}
+
 
 function signup(){
     let email = document.getElementById('bemail').value 
