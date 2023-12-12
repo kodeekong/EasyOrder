@@ -10,21 +10,21 @@ loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
 
-function login(emailId){
+function login(){
 
-    var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    if(emailId.value.match(mailformat))
-    {
-    document.form1.text1.focus();
-    return true;
-    }
-    else
-    {
-    alert("Invalid email address.");
-    document.form1.text1.focus();
-    return false;
-    }
-}    
+    // var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    // if(emailId.value.match(mailformat))
+    // {
+    // document.form1.text1.focus();
+    // return true;
+    // }
+    // else
+    // {
+    // alert("Invalid email address.");
+    // document.form1.text1.focus();
+    // return false;
+    // }
+// }
     let email = document.getElementById('email').value 
     let password = document.getElementById('password').value 
 
@@ -36,7 +36,7 @@ function login(emailId){
     else{
         alert('incorrect Password')
     }
-
+}
 
 function signup(){
     let email = document.getElementById('bemail').value 
@@ -86,3 +86,7 @@ function search1(){
             }
         }
     }
+
+function goTo(){
+    location.href='menu.html'
+}
