@@ -90,13 +90,11 @@ function ready(){
         cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change' , quantityChanged)
     }
     
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+    // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
     
     function purchaseClicked(){
 
         location.replace('checkout.html')
-
-    location.replace('checkout.html')
 
         var cartItems = document.getElementsByClassName('cart-items')[0]
         while (cartItems.hasChildNodes()){
@@ -105,3 +103,7 @@ function ready(){
         updateCart()
     }
 
+
+    function goToReceipt(){
+        location.replace('receipt.html')
+    }
