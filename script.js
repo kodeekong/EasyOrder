@@ -66,27 +66,6 @@ function validate()
     }
 }
 
-function search1(){
-    const searchbox = document.getElementById('searchInput').value.toUpperCase();
-    const storeItem = document.getElementById('menu-container')
-    const product = document.querySelectorAll('details-sub')
-    const pname = document.getElementsByClassName('details-sub')
-
-    for( var i = 0; i < pname.length; i++){
-        let match = product[i].getElementsByTagName('h5')[0];
-
-        if(match){
-           let textValue = match.textContent || match.innerHTML
-
-           if(textValue.toUpperCase().indexOf(searchbox) > -1) {
-            product[i].style.display = "";
-            } else {
-            product[i].style.display = "none"
-                }
-            }
-        }
-    }
-
 function goTo(){
     location.href='menu.html'
 }
@@ -95,4 +74,27 @@ function goTo1(){
 }
 function goTo2(){
     location.href='checkout.html'
+}
+
+function cashOCard(evt){
+
+    if (evt.value == "Cash")
+    {
+        let setForm = document.getElementsByClassName("cashRow")[0];
+        setForm.innerHTML = ``;
+    }
+
+    else
+    {
+        let setForm = document.getElementsByClassName("cashRow")[0];
+        setForm.innerHTML = `
+        <label>Card Name:</label>  <input id="name" name="name" placeholder="Name" required="">
+        <br>
+        <label>Card Number:</label>  <input id="cardNumber" name="cardNumber" inputmode="numeric" type="tel" autocomplete="cc-number" maxlength="22" placeholder="xxxx-xxxx-xxxx-xxxx" required="">
+        <br>
+        <label>Exp. Date:</label>    <input id="cardDate" placeholder="10/25" type="text" maxlength="5" required />
+        <br>
+        <label>CCV:</label>  <input id="ccv"placeholder="123" type="text" maxlength="3" required />
+        <br><br> `;
+    }
 }

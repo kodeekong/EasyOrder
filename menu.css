@@ -171,5 +171,13 @@ h1{
     background-color: #db7207;
     border: 1.75px solid white;
     color: black
-    
+}
+
+.checkout select{
+    width: 250px;
+    font-size: 100%;
+    border-color: black;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 100px;
 }
