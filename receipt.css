@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Arial";
+    src: url("arial.ttf");
+}
+
+body {
+    font-family: "Arial";
+    font-size: 15px;
+    color: #000;
+    background: radial-gradient(circle, rgb(219, 120, 21) 0%, rgb(245, 85, 5) 100%);
+    line-height: 15px;
+}
+
+.info {
+    margin: 0 0 0 30px;
+}
+
+.title {
+    font-size: 16px;
+    color: #333;
+    line-height: 20px;
+    margin: 20px 0 10px 0;
+}
+
+#mid {
+    margin: 20px 0;
+}
+
+#bot {
+    margin: 20px 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background: #f2f2f2;
+}
+
+.footer {
+    margin: 20px 0;
+    text-align: center;
+}
