@@ -95,13 +95,13 @@ function cashOCard(evt){
     {
         let setForm = document.getElementsByClassName("cashRow")[0];
         setForm.innerHTML = `
-        <label>Card Name:</label>  <input id="name" name="name" placeholder="Name" required="">
+        <label>Card Name:</label>  <input id="name" name="name" placeholder="Name" required="" style="width: 300px; font-size: 1.25rem; height: 50px; padding: 5px; margin-right:20px; margin: 0px; margin-bottom: 5px;">
         <br>
-        <label>Card Number:</label>  <input id="number" name="number" inputmode="numeric" type="tel" maxlength="22" placeholder="xxxx-xxxx-xxxx-xxxx" required="">
+        <label>Card Number:</label>  <input id="number" name="number" inputmode="numeric" type="tel" maxlength="22" placeholder="xxxx-xxxx-xxxx-xxxx" required="" style="width: 300px; font-size: 1.25rem; height: 50px; padding: 5px; margin-right:20px; margin: 0px; margin-bottom: 5px;">
         <br>
-        <label>Exp. Date:</label>    <input id="date" placeholder="01/01" type="text" maxlength="5" required />
+        <label>Exp. Date:</label>    <input id="date" placeholder="01/01" type="text" maxlength="5" required /style="width: 300px; font-size: 1.25rem; height: 50px; padding: 5px; margin-right:20px; margin: 0px; margin-bottom: 5px;">
         <br>
-        <label>CCV:</label>  <input id="ccv"placeholder="123" type="text" maxlength="3" required />
+        <label>CCV:</label>  <input id="ccv"placeholder="123" type="text" maxlength="3" required /style="width: 300px; font-size: 1.25rem; height: 50px; padding: 5px; margin-right:20px; margin: 0px; margin-bottom: 5px;">
         <br><br> `;
     }
 }
