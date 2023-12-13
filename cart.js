@@ -100,10 +100,6 @@ function ready(){
         localStorage.setItem(reciept, price)
         location.replace('receipt.html')
 
-
-        location.replace('receipt.html')
-
-
         var cartItems = document.getElementsByClassName('cart-items')[0]
         while (cartItems.hasChildNodes()){
             cartItems.removeChild(cartItems.firstChild)
