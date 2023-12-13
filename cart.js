@@ -99,6 +99,11 @@ function ready(){
         let price = document.getElementById('cart-price').innerText
         localStorage.setItem(reciept, price)
         location.replace('receipt.html')
+        let receipt = document.getElementById('title').innerText
+        let price = document.getElementById('cart-price').innerText
+        localStorage.setItem(receipt, price)
+        location.replace('receipt.html')
+
 
         var cartItems = document.getElementsByClassName('cart-items')[0]
         while (cartItems.hasChildNodes()){
