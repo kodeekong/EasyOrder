@@ -94,10 +94,12 @@ function ready(){
     // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
     
     function purchaseClicked(){
+
         let reciept = document.getElementById('title').innerText
         let price = document.getElementById('cart-price').innerText
         localStorage.setItem(reciept, price)
         location.replace('receipt.html')
+>>>>>>>>> Temporary merge branch 2
 
         var cartItems = document.getElementsByClassName('cart-items')[0]
         while (cartItems.hasChildNodes()){
