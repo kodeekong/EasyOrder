@@ -91,7 +91,7 @@ function ready(){
 
     }
     
-    // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
     
     function purchaseClicked(){
 
@@ -105,9 +105,4 @@ function ready(){
             cartItems.removeChild(cartItems.firstChild)
         }
         updateCart()
-    }
-
-
-    function goToReceipt(){
-        location.replace('receipt.html')
     }
