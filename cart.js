@@ -77,9 +77,9 @@ function ready(){
         }
         var cartRowContents = `
             <div class="cart-item cart-column">
-                <span class="title">${title}</span>
+                <span class="title" id='title' >${title}</span>
             </div>
-            <span class="cart-price cart-column">${price}</span>
+            <span class="cart-price cart-column" id='cart-price' >${price}</span>
             <div class="cart-quantity cart-column">
                 <input class="cart-quantity-input" type="number" value="1">
                 <button class="btn btn-danger" type="button">REMOVE</button>
@@ -107,6 +107,3 @@ function ready(){
         updateCart()
     }
 
-    function work(){
-        
-    }
