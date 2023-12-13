@@ -24,8 +24,8 @@
                 <a href="#cart"><i class="ri-shopping-cart-2-fill"></i></a>
                 
                 <div class="search">
-                <input type="text" id="searchInput" onkeyup="search1()" placeholder="Search">
-                <button type="button" id="searchButton" onclick="search1()">Search</button>
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="button">Search</button>
 
                 
             </div>
@@ -218,7 +218,7 @@
             <div class="details">
                 <div class="details-sub">
                     <h5 class="title">Maple Bacon Walnut Coffee Cake</h5>
-                    <h4 class="shop-item-price">$</h5>
+                    <h4 class="shop-item-price">$9</h5>
                 </div>
                 <p>Walnut coffee cake with maple bacon on top with a maple syrup glaze. If you look at it long enough it will call out to you. You can hear the whispers, "eat me..."</p>
                 <button class="btn btn-primary shop-item-button" type="button">Add To Cart</button>
@@ -338,6 +338,34 @@
           <button class="btn btn-primary btn-purchase" type="button"><a href="receipt.html">CHECKOUT</a></button>
      </div>
 
+
+     <script>
+
+        document.querySelector('#search-input')
+        addEventListener('input', filterList)
+
+        function filterList(){
+            const searchInput = document.querySelector
+            ('#search-input');
+            const filter = searchInput.value.toLowerCase();
+            const listItems = document.querySelectorAll('.food-items');
+
+            listItems.forEach((item) =>{
+                let text =item.textContent;
+                if(text.toLowerCase().includes(filter.
+                toLowerCase())){
+                    item.style.display = ''
+                }
+                else{
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+
+
+
+     </script>
 
      <form class="cashRow">
         <div class="checkout" style="width: 200px;">
