@@ -91,13 +91,18 @@ function ready(){
 
     }
     
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+    // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
     
     function purchaseClicked(){
+
         let reciept = document.getElementById('title').innerText
         let price = document.getElementById('cart-price').innerText
         localStorage.setItem(reciept, price)
         location.replace('receipt.html')
+
+
+        location.replace('receipt.html')
+
 
         var cartItems = document.getElementsByClassName('cart-items')[0]
         while (cartItems.hasChildNodes()){
@@ -106,3 +111,7 @@ function ready(){
         updateCart()
     }
 
+
+    function goToReceipt(){
+        location.replace('receipt.html')
+    }
