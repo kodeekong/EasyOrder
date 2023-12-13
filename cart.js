@@ -91,7 +91,7 @@ function ready(){
 
     }
     
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+    // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
     
     function purchaseClicked(){
         let reciept = document.getElementById('title').innerText
@@ -106,3 +106,7 @@ function ready(){
         updateCart()
     }
 
+
+    function goToReceipt(){
+        location.replace('receipt.html')
+    }
