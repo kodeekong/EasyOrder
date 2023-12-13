@@ -339,27 +339,7 @@
      </div>
 
 
-
-     <form class="cashRow">
-        <div class="checkout" style="width: 200px;">
-            <select onchange="cashOCard(this)">
-                <option>Cash</option>
-                <option>Card</option>
-            </select>
-         </div>
-
-        <input type="text" placeholder="Order Name">
-        <select name="percentages" id="tip">
-            <option value="">Tip?</option>
-            <option value="">20%</option>
-            <option value=>15%</option>
-            <option value="">10%</option>
-            <option value="">0%</option>
-        </select>
-     </form>
-
-
-
+<<<<<<<<< Temporary merge branch 1
      <script>
 
         document.querySelector('#search-input')
@@ -387,6 +367,25 @@
 
 
      </script>
+
+<div class="checkout" style="width: 200px;">
+    <select onchange="cashOCard(this)" class="optional">
+        <option>Cash</option>
+        <option>Card</option>
+    </select>
+ </div>
+     <form class="cashRow">
+        <input type="text" placeholder="Order Name" class="nameInput">
+        <select name="percentages" id="tip">
+            <option >Tip?</option>
+            <option value="0.2">20%</option>
+            <option value="0.15" >15%</option>
+            <option value="0.1">10%</option>
+            <option value ="0">0%</option>
+        </select>
+     </form>
+
+
 
 
     <script src="cart.js" async></script>
