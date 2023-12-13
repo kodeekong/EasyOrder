@@ -110,6 +110,4 @@ function letGo(){
     document.getElementsByClassName('cart-item')
 }
 
-function addItem(itemName, title, image, price){
-    
-}
+function addfood()
