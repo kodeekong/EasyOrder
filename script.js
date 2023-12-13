@@ -81,7 +81,14 @@ function cashOCard(evt){
     if (evt.value == "Cash")
     {
         let setForm = document.getElementsByClassName("cashRow")[0];
-        setForm.innerHTML = ``;
+        setForm.innerHTML = `<input type="text" placeholder="Order Name">
+        <select name="percentages" id="tip">
+            <option value="">Tip?</option>
+            <option value="">20%</option>
+            <option value=>15%</option>
+            <option value="">10%</option>
+            <option value="">0%</option>
+        </select>`;
     }
 
     else
@@ -90,11 +97,19 @@ function cashOCard(evt){
         setForm.innerHTML = `
         <label>Card Name:</label>  <input id="name" name="name" placeholder="Name" required="">
         <br>
-        <label>Card Number:</label>  <input id="cardNumber" name="cardNumber" inputmode="numeric" type="tel" autocomplete="cc-number" maxlength="22" placeholder="xxxx-xxxx-xxxx-xxxx" required="">
+        <label>Card Number:</label>  <input id="number" name="number" inputmode="numeric" type="tel" maxlength="22" placeholder="xxxx-xxxx-xxxx-xxxx" required="">
         <br>
-        <label>Exp. Date:</label>    <input id="cardDate" placeholder="10/25" type="text" maxlength="5" required />
+        <label>Exp. Date:</label>    <input id="date" placeholder="01/01" type="text" maxlength="5" required />
         <br>
         <label>CCV:</label>  <input id="ccv"placeholder="123" type="text" maxlength="3" required />
         <br><br> `;
     }
+}
+
+function letGo(){
+    document.getElementsByClassName('cart-item')
+}
+
+function addItem(itemName, title, image, price){
+    
 }
