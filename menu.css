@@ -181,3 +181,27 @@ h1{
     margin-top: 50px;
     margin-left: 100px;
 }
+
+.cashRow{
+    margin-left: 100px;
+}
+
+.cashRow select{
+    height: 30px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.optional{
+    height: 30px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.nameInput{
+    margin: 15px;
+    height: 35px ;
+    width: 250px ;
+}
