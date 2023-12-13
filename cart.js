@@ -77,7 +77,11 @@ function ready(){
         }
         var cartRowContents = `
             <div class="cart-item cart-column">
+
+                <span class="title" id="title" >${title}</span>
+
                 <span class="title" id="title">${title}</span>
+
             </div>
             <span class="cart-price cart-column" id="cart-price">${price}</span>
             <div class="cart-quantity cart-column">
@@ -101,6 +105,9 @@ function ready(){
         location.replace('receipt.html')
         let receipt = document.getElementById('title').innerText
         let price = document.getElementById('cart-price').innerText
+        // let orderName = documet.getElementById('nameInput').innerText
+        // let tip = documet.getElementById('tip').innertext
+        // localStorage.setItem(orderName, tip)
         localStorage.setItem(receipt, price)
         location.replace('receipt.html')
 
