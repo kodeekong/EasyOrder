@@ -106,3 +106,7 @@ function ready(){
         }
         updateCart()
     }
+
+    function work(){
+        
+    }
