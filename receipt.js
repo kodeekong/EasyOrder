@@ -1,8 +1,8 @@
 
-// window.onload = function() {
+window.onload = function() {
 
-//     document.getElementById('itemName').innerHTML = localStorage.getItem('receipt');
-//     // document.getElementById('itemNum').innerText = localStorage.getItem('address');
-//     document.getElementById('itemPrice').innerHTML = localStorage.getItem('price');
-// }
+    localStorage.getItem('receipt') = document.getElementById('itemName').innerHTML;
+    // document.getElementById('itemNum').innerText = localStorage.getItem('address');
+    localStorage.getItem('price') = document.getElementById('itemPrice').innerHTML;
+}
 

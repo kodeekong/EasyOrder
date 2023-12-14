@@ -115,3 +115,28 @@ function addItemToCart(title, price, imageSrc){
 
 document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 
+function addItem(){
+    let newForm = document.getElementsByClassName("admn-btn")[0];
+    newForm.innerHTML = `<form>
+    <label>Item Name: </label>  <input id="itemName"  type="text" required=""><br><br>
+    <label>Price: </label>  <input id="newItemPrice" name="newItemPrice" type="text" required=""><br><br>
+    <label>Image Link: </label>  <input id="itemImg" name="itemImg" type="text" required=""><br><br>
+    <label>Item Description: </label>  <input id="itemDesc" name="itemDesc" type="text" required=""><br><br><br><br>
+    <button>Submit</button>
+    </form>
+    `;
+    newForm.getElementsByTagName("button")[0].addEventListener('click', () => {addItemSubmit(document.getElementsByTagName("select")[0].value)})
+
+    let newDiv = document.createElement('div')
+    let newDivS =`<div class="food-items" id="food-items">
+            <img src="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 class="title"></h5>
+                    <h4 class="shop-item-price"></h5>
+                </div>
+                <p></p>
+                <button class="admn-btn" type="button" onclick="remove()">remove</button>
+            </div>`
+            newDiv.innerHTML = newDivS
+}
