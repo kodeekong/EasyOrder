@@ -97,7 +97,8 @@ function ready(){
 
         let reciept = document.getElementById('title').innerText
         let price = document.getElementById('cart-price').innerText
-        localStorage.setItem(reciept, price)
+        let orderName = document.getElementById('nameInput').value
+        localStorage.setItem(reciept, price,)
         location.replace('receipt.html')
   
     

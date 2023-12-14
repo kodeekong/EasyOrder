@@ -80,8 +80,8 @@ function cashOCard(evt){
 
     if (evt.value == "Cash")
     {
-        let setForm = document.getElementsByClassName("cashRow")[0];
-        setForm.innerHTML = `<input type="text" placeholder="Order Name">
+        let Form = document.getElementsByClassName("cashRow")[0];
+        Form.innerHTML = `<input type="text" placeholder="Order Name">
         <select name="percentages" id="tip">
             <option value="">Tip?</option>
             <option value="">20%</option>
@@ -93,8 +93,8 @@ function cashOCard(evt){
 
     else
     {
-        let setForm = document.getElementsByClassName("cashRow")[0];
-        setForm.innerHTML = `
+        let Form = document.getElementsByClassName("cashRow")[0];
+        Form.innerHTML = `
         <label>Card Name:</label>  <input id="name" name="name" placeholder="Name" required="" style="width: 300px; font-size: 1.25rem; height: 50px; padding: 5px; margin-right:20px; margin: 0px; margin-bottom: 5px;">
         <br>
         <label>Card Number:</label>  <input id="number" name="number" inputmode="numeric" type="tel" maxlength="22" placeholder="xxxx-xxxx-xxxx-xxxx" required="" style="width: 300px; font-size: 1.25rem; height: 50px; padding: 5px; margin-right:20px; margin: 0px; margin-bottom: 5px;">
@@ -109,5 +109,3 @@ function cashOCard(evt){
 function letGo(){
     document.getElementsByClassName('cart-item')
 }
-
-function addfood()
